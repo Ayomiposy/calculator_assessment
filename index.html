@@ -16,7 +16,7 @@
 
 <body>
     <div class="calculator"> <!-- Calculator container -->
-        <input id="display" readonly>
+        <textarea id="display" readonly></textarea>
         <div class="keys"> <!--Calculator keys-->
             <div class="button" onclick="appendToDisplay('1')">1</div>
             <div class="button" onclick="appendToDisplay('2')">2</div>
@@ -35,9 +35,12 @@
             <div class="button operator-btn" onclick="appendToDisplay('^')">^</div>
             <div class="button" onclick="appendToDisplay('.')">.</div>
             <div class="button" onclick="appendToDisplay('0')">0</div>
-            <div class="button" onclick="clearScreen()"><img src="./assets/backspace_img.png" alt="backspace image">
-            </div>
+            <div class="button" onclick="clearScreen()">C</div>
             <div class="button equal-btn" onclick="calculate()">=</div>
+            <div class="button" onclick="appendToDisplay('(')">(</div>
+            <div class="button" onclick="appendToDisplay(')')">)</div>
+            <div class="button" onclick="backSpace()"><img src="./assets/backspace_img.png" alt="backspace image"></div>
+            <div class="button history-btn" onclick="history()">History</div>
         </div>
     </div>
 </body>
