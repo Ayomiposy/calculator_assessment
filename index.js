@@ -60,7 +60,6 @@ function calculate() {
 function history() {
     showHistory = showHistory.slice(0, 5); // Limit to last 5 calculations
     display.value = ("History:\n" + showHistory.join("\n")); // Join the history array into a string with line breaks
-    display.style.overflowY = "scroll";
     display.style.height = "100px";
     display.style.fontSize = "14px";
 }
