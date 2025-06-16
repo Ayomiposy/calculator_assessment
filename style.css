@@ -34,6 +34,7 @@ body {
     color: white;
     padding: 20px;
     font-size: 50px;
+    overflow: hidden;
 }
 
 .keys {

@@ -53,13 +53,14 @@ function calculate() {
     catch {
         display.value = "Error"
     }
-}
+}   
 
 
 // Function to display history of calculations
 function history() {
-    showHistory = showHistory.slice(0, 5); // Limit to last 5 calculations
+    showHistory = showHistory.slice(0, 6); // Limit to last 5 calculations
     display.value = ("History:\n" + showHistory.join("\n")); // Join the history array into a string with line breaks
     display.style.height = "100px";
+    display.style.overflowY = "scroll"
     display.style.fontSize = "14px";
 }
